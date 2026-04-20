@@ -1,8 +1,8 @@
 const links = [
-  { href: "#home", label: "Início" },
-  { href: "#about", label: "Sobre" },
-  { href: "#projects", label: "Projetos" },
-  { href: "#contact", label: "Contato" },
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
@@ -14,7 +14,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       }`}
       aria-hidden={!menuOpen}
     >
-      <nav className="flex flex-col gap-8 text-center" aria-label="Menu mobile">
+      <nav className="flex flex-col gap-8 text-center" aria-label="Mobile menu">
         {links.map(({ href, label }) => (
           <a
             key={href}

@@ -1,8 +1,8 @@
 const links = [
-  { href: "#home", label: "Início" },
-  { href: "#about", label: "Sobre" },
-  { href: "#projects", label: "Projetos" },
-  { href: "#contact", label: "Contato" },
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
@@ -16,7 +16,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           Gustavo Matos
         </a>
 
-        <nav className="hidden md:flex items-center gap-8" aria-label="Principal">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           {links.map(({ href, label }) => (
             <a
               key={href}
@@ -34,7 +34,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
-          aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
           {menuOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>

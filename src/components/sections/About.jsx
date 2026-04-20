@@ -6,11 +6,11 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-            Sobre mim
+            About Me
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed">
-            Sou desenvolvedor full stack focado em construir interfaces claras e backends confiáveis.
-            Gosto de aprender tecnologias novas e entregar código que seja fácil de manter.
+          I am a Software Engineering student and an aspiring Web Developer at the very beginning of my professional journey.
+           My focus is on building modern, functional web applications while constantly expanding my technical toolkit.
           </p>
         </div>
       </RevealOnScroll>
